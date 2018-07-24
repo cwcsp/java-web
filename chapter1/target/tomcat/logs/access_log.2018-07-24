@@ -15,3 +15,7 @@
 0:0:0:0:0:0:0:1 - - [24/Jul/2018:22:55:23 +0800] "GET /charpter1%7D/hello HTTP/1.1" 404 - http-bio-8080-exec-8 0
 0:0:0:0:0:0:0:1 - - [24/Jul/2018:22:55:24 +0800] "GET /charpter1%7D/hello HTTP/1.1" 404 - http-bio-8080-exec-9 0
 0:0:0:0:0:0:0:1 - - [24/Jul/2018:22:55:48 +0800] "GET /charpter1/hello HTTP/1.1" 200 145 http-bio-8080-exec-5 1033
+0:0:0:0:0:0:0:1 - - [24/Jul/2018:23:14:04 +0800] "GET /chapter1/hello HTTP/1.1" 200 145 http-bio-8080-exec-2 1113
+0:0:0:0:0:0:0:1 - - [24/Jul/2018:23:14:22 +0800] "GET /chapter1/hello HTTP/1.1" 200 146 http-bio-8080-exec-3 125
+0:0:0:0:0:0:0:1 - - [24/Jul/2018:23:14:44 +0800] "GET /chapter1/hello HTTP/1.1" 200 145 http-bio-8080-exec-5 89
+0:0:0:0:0:0:0:1 - - [24/Jul/2018:23:14:53 +0800] "GET /chapter1/hello HTTP/1.1" 200 145 http-bio-8080-exec-7 4
