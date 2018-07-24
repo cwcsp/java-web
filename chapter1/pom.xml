@@ -10,7 +10,7 @@
     </properties>
 
     <groupId>org.smart4</groupId>
-    <artifactId>charpter1</artifactId>
+    <artifactId>chapter1</artifactId>
     <version>1.0.0</version>
 
     <dependencies>
