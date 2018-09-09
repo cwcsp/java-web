@@ -27,17 +27,14 @@ public class CustomerService {
     }
 
     public boolean createCustomer(Map<String, Object> fieldMap) {
-        // TODO
-        return false;
+        return DatabaseHelper.insertEntity(Customer.class, fieldMap);
     }
 
     public boolean updateCustomer(long id, Map<String, Object> fieldMap) {
-        // TODO
-        return false;
+        return DatabaseHelper.updateEntity(Customer.class, id, fieldMap);
     }
 
     public boolean deleteCustomer(long id) {
-        // TODO
-        return false;
+        return DatabaseHelper.deleteEntity(Customer.class, id);
     }
 }
