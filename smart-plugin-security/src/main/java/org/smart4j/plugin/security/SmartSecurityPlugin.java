@@ -2,6 +2,7 @@ package org.smart4j.plugin.security;
 
 import org.apache.shiro.web.env.EnvironmentLoaderListener;
 
+import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContainerInitializer;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -14,7 +15,7 @@ public class SmartSecurityPlugin implements ServletContainerInitializer {
         //注册 Listener
         servletContext.addListener(EnvironmentLoaderListener.class);
         //注册 Filter
-        servletContext.addFilter("SmartSecurityFilter", SmartSecurityFilter.class);
+        FilterRegistration.Dynamic smartSecurityFilter = servletContext.addFilter("SmartSecurityFilter", SmartSecurityFilter.class);
         smartSecurityFilter.addMappingForUrlPatterns(null, false, "/*");
     }
 }

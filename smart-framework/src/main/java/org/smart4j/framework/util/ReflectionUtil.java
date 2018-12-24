@@ -20,6 +20,14 @@ public final class ReflectionUtil {
         return instance;
     }
 
+    /**
+     * 创建实例（根据类名）
+     */
+    public static Object newInstance(String className) {
+        Class<?> cls = ClassUtil.loadClass(className);
+        return newInstance(cls);
+    }
+
     public static Object invokeMethod(Object obj, Method method, Object... args) {
         Object result;
         try {
