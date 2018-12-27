@@ -1,5 +1,12 @@
 package org.smart4j.plugin.security.Exception;
 
+/**
+ * 认证异常（当非法访问时抛出）
+ *
+ * @author huangyong
+ * @since 1.0.0
+ */
+
 public class AuthcException extends Exception {
     public AuthcException() {
         super();
